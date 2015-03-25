@@ -26,6 +26,5 @@
     "fast-test": "run-browser test/index.js --phantom | tap-spec",
     "cover": "run-browser test/index.js --phantom --report cobertura --report html --report text",
     "view-cover": "npm run cover && open ./coverage/index.html"
-  },
-  "private": true
+  }
 }
