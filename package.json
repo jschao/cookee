@@ -1,0 +1,31 @@
+{
+  "name": "cookee",
+  "description": "A cookie management module compatible with Browserify",
+  "version": "0.0.1",
+  "author": "Jonathan Chao <jonathan.s.chao@gmail.com>",
+  "keywords": [
+    "cookie",
+    "browser",
+    "browserify"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "istanbul": "~0.3.0",
+    "run-browser": "~2.0.0",
+    "tap-spec": "~2.2.0",
+    "tape": "~3.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jschao/cookee"
+  },
+  "scripts": {
+    "test": "npm run cover -s",
+    "fast-test": "run-browser test/index.js --phantom | tap-spec",
+    "cover": "run-browser test/index.js --phantom --report cobertura --report html --report text",
+    "view-cover": "npm run cover && open ./coverage/index.html"
+  },
+  "private": true
+}
