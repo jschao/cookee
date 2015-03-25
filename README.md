@@ -1,5 +1,7 @@
 # cookee
 
+[![Build Status](https://travis-ci.org/jschao/cookee.svg?branch=master)](https://travis-ci.org/jschao/cookee)
+
 cookee provides an easy interface for managing cookies in the browser.
 
 ## install
